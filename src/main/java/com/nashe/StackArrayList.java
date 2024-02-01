@@ -4,7 +4,7 @@ package com.nashe;
  * Esta implementación sigue la interfaz estándar de una pila (Stack).
  *
  * @param <E> Tipo de elementos almacenados en la pila.
- * @author June Herrera
+ * @author June Herrera, Jonathan Zacarías
  */
 
 import java.util.ArrayList;
