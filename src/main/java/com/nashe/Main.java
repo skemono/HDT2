@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
         Stack<Integer> pila = new StackArrayList<>();
         CalculadoraADT calculadora = new CalculadoraPostfix(pila);
+        System.out.println(System.getProperty("user.dir"));
 
         try (BufferedReader br = new BufferedReader(new FileReader("datos.txt"))) {
             String linea;
@@ -19,7 +20,7 @@ public class Main {
                 System.out.println("Resultado final: " + resultado);
                 System.out.println("-----------");
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

@@ -14,7 +14,7 @@ public class TestPila {
     }
 
     @Test
-    public void testPushPop() {
+    public void testPushPop() throws Exception {
         pila.push(1);
         pila.push(2);
 
@@ -23,7 +23,7 @@ public class TestPila {
     }
 
     @Test
-    public void testPeek() {
+    public void testPeek() throws Exception {
         pila.push(3);
         pila.push(5);
 
@@ -32,7 +32,7 @@ public class TestPila {
     }
 
     @Test
-    public void testEmpty() {
+    public void testEmpty() throws Exception {
         assertTrue(pila.empty());
 
         pila.push(7);

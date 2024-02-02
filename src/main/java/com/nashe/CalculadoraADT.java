@@ -5,5 +5,5 @@ package com.nashe;
  */
 public interface CalculadoraADT {
 
-    int evaluarExpresion(String expresion);
+    int evaluarExpresion(String expresion) throws Exception;
 }

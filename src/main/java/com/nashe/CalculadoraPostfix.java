@@ -13,7 +13,7 @@ public class CalculadoraPostfix implements CalculadoraADT {
         this.pila = pila;
     }
 
-    public int evaluarExpresion(String expresion) {
+    public int evaluarExpresion(String expresion) throws Exception {
         StringTokenizer tokenizer = new StringTokenizer(expresion);
         while (tokenizer.hasMoreTokens()) {
             String token = tokenizer.nextToken();
@@ -50,7 +50,7 @@ public class CalculadoraPostfix implements CalculadoraADT {
         return token.equals("+") || token.equals("-") || token.equals("*") || token.equals("/");
     }
 
-    private void evaluarOperacion(String operador) {
+    private void evaluarOperacion(String operador) throws Exception {
         if (pila.size() < 2) {
             throw new IllegalArgumentException("Operandos insuficientes para la operación " + operador);
         }
